@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body>
+     <div class="main-div">
+        <a href="/read"> Read user</a>
+        <h1 class="heading">Update </h1>
+        <form action="/update/<%= updateuser._id %>" method="post">
+            <input type="text" name="name" value="<%= updateuser.name %>" required>
+            <input type="email" name="email" value="<%= updateuser.email %>" required>
+            <input type="text" name="image" value="<%= updateuser.image %>" required>
+            <button type="submit">Update</button>
+          </form>
+     </div>
+</body>
+</html>

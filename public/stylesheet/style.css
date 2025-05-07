@@ -1,0 +1,118 @@
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    background-color: rgb(49, 48, 48);
+    
+}
+
+
+.name{
+  margin: 10px;
+  background-color: rgb(29, 27, 25);
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(209, 207, 207);
+  font: 20px;
+}
+
+.email{
+  margin: 10px;
+  background-color: rgb(29, 27, 25);
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(209, 207, 207);
+  font: 20px;
+}
+
+
+.image{
+  margin: 10px;
+  background-color: rgb(29, 27, 25);
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(209, 207, 207);
+  font: 20px;
+}
+
+.submit{
+  cursor: pointer;
+  margin: 10px;
+  background-color: rgb(255, 253, 251);
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(9, 64, 243);
+  font: 20px;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.heading{
+  font-size: 10vh;
+  color: white;
+  margin: 20px;
+  padding: 29px;
+  
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s ease;
+  height: 50vh;
+}
+
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.profile-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 15px;
+}
+
+.read-name {
+  font-size: 24px;
+  color: #0e0d0d;
+  margin-bottom: 10px;
+}
+
+.read-email {
+  font-size: 16px;
+  color: #0e0d0d;
+}
+.edit{
+  background-color: rgb(74, 74, 165);
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 10px;
+  width: 100px;
+  
+}
+
+.delete{
+  background-color: rgb(131, 24, 24);
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 10px;
+  width: 100px;
+  column-gap: normal;
+}
