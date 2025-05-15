@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body>
+    <div>
+        
+      <div> <a href="/logout" class="logout" type="button"> Logout</a> </div>  
+      <div class="mid-div">
+          <a class="upload-div-a" href="/profile/upload">Upload</a>
+          
+          <div class="profile-image"><img class="default-profile" src="/images/upload/<%= user.profilepic %>" alt=""> </div>
+          <h1>Welcome <%= user.name %> </h1>
+
+      </div>
+        <div class="container">
+            <form action="/profile" method="post">
+                <textarea name="content" placeholder="What's on your mind?" required></textarea>
+                <button type="submit" class="button">Post</button>
+            </form>
+            
+            <div class="post-section">
+                <h2 class="post-header">Your Posts</h2>
+                <% user.posts.reverse().forEach(function(post) { %>
+                    <div class="post-card">
+                        <div class="post-header">
+                            <h4 >@<%= user.username %></h4>
+                            <div class="actions">
+                                <form action="/like/<%= post._id %>" method="post" style="display:inline;">
+                                    
+                                    <button type="submit" class="like"><%= post.likes.length %> ❤️</button>
+                                    <a href="/edit/<%= post._id %>" class="edit">✏️ </a>
+                                    
+                                </form>
+                                <form action="/delete/<%= post._id %>" method="post" style="display:inline;">
+                                    <button type="submit" class="delete">🗑️ </button>
+                                </form>
+                            </div>
+                        </div>
+                        <p class="post-con"><%= post.content %></p>
+                    </div>
+                    <% }) %>
+                </div>>
+                
+                
+            </div>
+        </div>
+</body>
+</html>

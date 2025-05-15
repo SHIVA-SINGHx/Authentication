@@ -1,14 +1,12 @@
 
 *{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    box-sizing: border-box;
     border-width: 0;
     border-style: solid;
     border-color: #e5e7eb;
     background-color: rgb(49, 48, 48);
     
 }
-
 
 .name{
   margin: 10px;
@@ -18,8 +16,7 @@
   color: rgb(209, 207, 207);
   font: 20px;
 }
-
-.email{
+.password{
   margin: 10px;
   background-color: rgb(29, 27, 25);
   padding: 10px;
@@ -28,8 +25,25 @@
   font: 20px;
 }
 
+.age{
+  margin: 10px;
+  background-color: rgb(29, 27, 25);
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(209, 207, 207);
+  font: 20px;
+}
 
-.image{
+.username{
+  margin: 10px;
+  background-color: rgb(29, 27, 25);
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(209, 207, 207);
+  font: 20px;
+}
+
+.email{
   margin: 10px;
   background-color: rgb(29, 27, 25);
   padding: 10px;
@@ -50,69 +64,159 @@
   font-family: 'Times New Roman', Times, serif;
 }
 
-.heading{
-  font-size: 10vh;
-  color: white;
-  margin: 20px;
-  padding: 29px;
-  
-}
-
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    
 }
 
-.card {
-  background-color: #fff;
-  border-radius: 14px;
-  padding: 20px;
-  width: 300px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: 0.3s ease;
-  height: 50vh;
+h1 {
+    text-align: center;
+    color: rgb(211, 248, 0);
 }
 
-
-.card:hover {
-  transform: scale(1.02);
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    
 }
 
-.profile-img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 16px;
+textarea {
+    padding: 10px;
+    resize: none;
+    height: 100px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #e5e7eb;
+    
+}
+
+.tungtung{
+   padding: 10px;
+    resize: none;
+    height: 100px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: rgb(245, 222, 178);
+    
+}
+
+.button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.post-card {
+  border: 1px solid #ddd;
+  padding: 10px;
   margin-bottom: 15px;
+  border-radius: 5px;
+  height: 200px;
 }
 
-.read-name {
-  font-size: 24px;
-  color: #0e0d0d;
-  margin-bottom: 10px;
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
 }
 
-.read-email {
-  font-size: 16px;
-  color: #0e0d0d;
+.post-header h4 {
+  margin: 0;
+  font-weight: bold;
+  color: rgb(61, 226, 10);
 }
-.edit{
-  background-color: rgb(74, 74, 165);
-  color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-top: 10px;
-  width: 100px;
+
+.actions {
+  display: flex;
+  gap: 20px;
   
+}
+
+.edit {
+  /* color: green; */
+  cursor: pointer;
+}
+
+.like {
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.logout{
+  background-color: rgb(236, 0, 0);
+  padding: 10px;
+  border-radius: 10px;
+  color: wheat;
+  cursor: pointer;
+  margin-left: 2vh;
+  padding-top: 3px;
+  
+}
+
+.Update{
+    padding: 10px;
+    background-color: #ddec0d;
+    color: rgb(7, 7, 7);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .delete{
-  background-color: rgb(131, 24, 24);
-  color: white;
+  cursor: pointer;
+}
+
+.post-con{
+  color: #cccccc;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-top: 10px;
-  width: 100px;
-  column-gap: normal;
+
+}
+
+.post-header{
+  color: #ff0000;
+}
+
+.mid-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  gap: 10px;
+}
+
+
+  .profile-image {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc;
+}
+
+.default-profile {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.upload-div-a{
+  cursor: pointer;
+  color: rgb(93, 250, 2);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: medium;
 }

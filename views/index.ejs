@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/stylesheet/style.css">
 </head>
 <body>
-     <div class="main-div">
-        <a href="/read"> Read user</a>
-        <h1 class="heading">Create User </h1>
-         <form action="/create" method="post">
-            <input class="name" type="text" name="name" placeholder="name">
-            <input class="email" type="email" name="email" placeholder="email">
-            <input class="image" type="password" name="password" placeholder="password">
-            <input class="image" type="number" name="age" placeholder="age">
-            <input class="submit" type="submit" value="Login">
-            
-         </form>
-     </div>
+   <div>
+      <h1>Create User</h1>
+      <form action="/signin" method="post"> 
+        <input type="text"   class="name"  name="name"       placeholder="name">
+        <input type="text"  required class="username" name="username"  placeholder="username">
+        <input type="email"  required class="email" name="email"     placeholder="email">
+        <input type="password" required class="password" name="password" placeholder="password">
+        <input type="number" class="age" name="age" placeholder="age">
+        <input type="submit"  class="submit" name="Create ">
+      </form>
+   </div>
 </body>
 </html>

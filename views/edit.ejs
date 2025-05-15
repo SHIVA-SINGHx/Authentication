@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Edit Your Post</h2>
+        <form action="/edit/<%= post._id %>" method="POST">
+            <textarea name="content" required><%= post.content %></textarea>
+            <button type="submit" class="Update">Update</button>
+        </form>
+    </div>
+</body>
+</html>
